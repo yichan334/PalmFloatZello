@@ -1,45 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Palm Float Zello"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ปุ่มลอยสำหรับกดพูดใน Zello"
-        android:textSize="16sp"
-        android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/btnEnableAccessibility"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. เปิดสิทธิ์ Accessibility"
-        android:layout_marginTop="32dp" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btnOpenZello"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2. เปิดแอป Zello"
-        android:layout_marginTop="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palm Float Zello"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnStartFloat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="3. เริ่มปุ่มลอย"
-        android:layout_marginTop="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปุ่มลอยสำหรับกดพูดใน Zello"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เริ่ม / หยุด ปุ่มลอย"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ขนาดปุ่ม"
+            android:layout_marginTop="16dp" />
+
+        <SeekBar
+            android:id="@+id/seekSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความโปร่งใส"
+            android:layout_marginTop="8dp" />
+
+        <SeekBar
+            android:id="@+id/seekAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/switchLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ล็อกตำแหน่งปุ่ม"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ขอสิทธิ์แสดงทับแอปอื่น"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เปิดสิทธิ์ Accessibility"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnZello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เปิดแอป Zello"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
