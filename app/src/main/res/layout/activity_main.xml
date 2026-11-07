@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#121212" android:padding="20dp">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="Palm Float Zello" android:textSize="28sp" android:textColor="#FFFFFF" android:textStyle="bold"/>
+<TextView android:text="ปุ่มลอยของนายเอง - กดได้ไม่จำกัด" android:textColor="#AAAAAA" android:layout_marginBottom="20dp"/>
+<Button android:id="@+id/btnOverlay" android:text="1. เปิดสิทธิ์ แสดงทับแอพอื่น" android:layout_marginBottom="8dp"/>
+<Button android:id="@+id/btnAccessibility" android:text="2. เปิด Accessibility" android:layout_marginBottom="8dp"/>
+<Button android:id="@+id/btnZello" android:text="3. เปิด Zello แล้วตั้ง Status = Solo" android:layout_marginBottom="20dp"/>
+<Button android:id="@+id/btnToggle" android:text="เปิดปุ่มลอย - Turn ON" android:layout_height="60dp" android:layout_marginBottom="20dp"/>
+<TextView android:text="ขนาดปุ่ม" android:textColor="#FFFFFF"/>
+<SeekBar android:id="@+id/seekSize" android:max="100" android:progress="50"/>
+<TextView android:text="ความโปร่ง / ทึบ" android:textColor="#FFFFFF"/>
+<SeekBar android:id="@+id/seekAlpha" android:max="100" android:progress="100"/>
+<Switch android:id="@+id/switchLock" android:text="โหมดล็อก: กด 1 ครั้งพูดยาว กดอีกครั้งหยุด" android:textColor="#FFFFFF"/>
+</LinearLayout></ScrollView>
