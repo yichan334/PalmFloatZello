@@ -5,7 +5,7 @@ import android.accessibilityservice.GestureDescription
 import android.graphics.Path
 import android.view.accessibility.AccessibilityEvent
 
-class MyAccessibilityService : AccessibilityService {
+ class MyAccessibilityService : AccessibilityService() {
 
     companion object {
         var instance: MyAccessibilityService? = null
